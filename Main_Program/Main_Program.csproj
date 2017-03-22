@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2846EAF3-9CB3-41CF-A093-5222D43C3227}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EnerlifeCN</RootNamespace>
+    <AssemblyName>EnerlifeCN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Loader, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\swissaddon\framework\Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="microsoft.msxml, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SAPBusinessOneSDK">
+      <HintPath>..\..\..\SAPBusinessOneSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="SwissAddonFramework, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\swissaddon\framework\SwissAddonFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Event\SwApplicationEventHandler.cs" />
+    <Compile Include="Code\Event\SwFormDataEventHandler.cs" />
+    <Compile Include="Code\Event\SwFormLoadedEventHandler.cs" />
+    <Compile Include="Code\Event\SwItemEventHandler.cs" />
+    <Compile Include="Code\Event\SwLayoutKeyEventHandler.cs" />
+    <Compile Include="Code\Event\SwMenuEventHandler.cs" />
+    <Compile Include="Code\Event\SwPrintEventHandler.cs" />
+    <Compile Include="Code\Event\SwProgressBarEvent.cs" />
+    <Compile Include="Code\Event\SwReportDataEventHandler.cs" />
+    <Compile Include="Code\Event\SwRightClickHandler.cs" />
+    <Compile Include="Code\Event\SwStatusBarEventHandler.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0160\COR0160.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0170\COR0170.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0180\COR0180.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0230\COR0230.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0030\COR0030.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0040\COR0040.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0050\COR0050.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0060\COR0060.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0090\COR0090.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0070\COR0070.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0100\COR0100.cs" />
+    <Compile Include="Code\FormExt\Other\MessageInfo\MessageInfo.cs" />
+    <Compile Include="Code\FormExt\SwBaseForm.cs" />
+    <Compile Include="Code\FormExt\System\_133\System133.cs" />
+    <Compile Include="Code\FormExt\System\_139\System139.cs" />
+    <Compile Include="Code\FormExt\System\_140\System140.cs" />
+    <Compile Include="Code\FormExt\System\_150\System150.cs" />
+    <Compile Include="Code\FormExt\System\_170\System170.cs" />
+    <Compile Include="Code\FormExt\System\_65308\System65308.cs" />
+    <Compile Include="Code\FormExt\System\_85\System85.cs" />
+    <Compile Include="Code\Util\CommonUtil.cs" />
+    <Compile Include="Code\Global.cs" />
+    <Compile Include="Code\Util\CreateNewFormUtil.cs" />
+    <Compile Include="Code\Util\LoadModalXmlUtil.cs" />
+    <Compile Include="Code\Util\MenuItemsUtil.cs" />
+    <Compile Include="Code\Model\OMenuItem.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0010\COR0010.cs" />
+    <Compile Include="Code\FormExt\Custom\COR0020\COR0020.cs" />
+    <Compile Include="Code\Util\XmlAndTDHelper.cs" />
+    <Compile Include="Code\Util\ZipFileHelper.cs" />
+    <Compile Include="Program_IModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSXML2">
+      <Guid>{F5078F18-C551-11D3-89B9-0000F81FE221}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0010\COR0010.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0020\COR0020.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\UDOExt\Custom\" />
+    <Folder Include="Code\UDOExt\System\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0030\COR0030.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0040\COR0040.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0050\COR0050.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0060\COR0060.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0070\COR0070.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0100\COR0100.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0090\COR0090.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0160\COR0160.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0170\COR0170.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0180\COR0180.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Other\MessageInfo\MessageInfo.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Code\FormExt\Custom\COR0230\COR0230.XML">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
